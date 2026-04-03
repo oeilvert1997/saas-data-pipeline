@@ -1,0 +1,23 @@
+[project]
+name = "saas-data-pipeline"
+version = "0.1.0"
+description = "SaaS data pipeline"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "pyyaml>=6.0.3",
+    "requests>=2.33.1",
+]
+
+[dependency-groups]
+dev = [
+  "ruff>=0.15.9",
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py314"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W"]
+fixable = ["ALL"]
